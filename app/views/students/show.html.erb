@@ -1,0 +1,5 @@
+<h1>Student: <%= @student.to_s %> </h1/>
+
+
+<%= link_to "Edit Student", edit_student_path(@student) %>
+<%= link_to "Delete Student", student_path(@student), method: :delete %>
