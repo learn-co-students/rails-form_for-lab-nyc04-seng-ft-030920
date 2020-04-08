@@ -1,0 +1,9 @@
+<h1> All Classes </h1>
+
+<ul>
+<% @schoolclasses.each do |classes| %>
+<li> <%= link_to classes.to_s, schoolclass_path(classes.id) %> </li>
+<% end %>
+</ul>
+
+<%= link_to "Add Class", new_schoolclass_path  %>
